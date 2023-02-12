@@ -11,3 +11,5 @@
 <br>
 
 <h2>Qual a minha ideia para minha PAP</h2>
+
+<p>Minha ideia e criar um site e uma app para os alunos da minha escola possam ver os almoços, faltas e etc...</p>
