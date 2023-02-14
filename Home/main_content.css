@@ -1,4 +1,27 @@
 body {
-    background: #20A1E8;
-    color: black;
+  background: #20a1e8;
+  color: black;
+}
+
+button {
+  color: #ffffff;
+  background-color: #554b8b;
+  font-size: 18px;
+  border: 1px solid #63636346;
+  border-radius: 10px;
+  padding: 15px 35px;
+  cursor: pointer;
+}
+
+button:hover {
+  color: #ffffff;
+  background-color: #307fff;
+}
+
+.connjuto_botoes_1 {
+  margin: 95px 0px 0px 35px;
+}
+
+a#bot {
+    margin: 0px 15px 0px 0px;
 }
