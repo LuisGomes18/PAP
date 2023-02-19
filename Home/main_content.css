@@ -3,31 +3,39 @@ body {
   color: black;
 }
 
-#botao {
+.connjuto_botoes_1 {
+  margin: 95px 0px 0px 35px;
+  display: flex;
+}
+
+.connjuto_botoes {
+  margin: 10px 0px 0px 35px;
+  display: flex;
+}
+
+.aviso-btn {
+  font-size: 17px;
+  width: 135px;
+  height: 90px;
+  text-align: center;
   background-color: #554b8b;
   border: 1px solid #63636346;
   border-radius: 10px;
-  color: #ffffff;
   cursor: pointer;
-  display: flex;
-  font-size: 18px;
-  flex-direction: column;
-  height: 80px;
-  justify-content: center;
-  text-align: center;
-  width: 145px;
+  margin-right: 10px;
 }
 
-a#botao {
-  text-decoration: none;
+.aviso-btn:last-child {
+  margin-right: 0;
 }
 
-#botao:hover {
+.aviso-btn:hover {
   color: #ffffff;
   background-color: #307fff;
   border: 1px solid transparent;
 }
 
-.connjuto_botoes_1 {
-  margin: 95px 0px 0px 35px;
+.aviso-btn a {
+  text-decoration: none;
+  color: #ffffff;
 }
