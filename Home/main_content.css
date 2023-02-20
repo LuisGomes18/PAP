@@ -1,6 +1,7 @@
 body {
   background: #20a1e8;
   color: black;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 .connjuto_botoes_1 {
@@ -14,9 +15,9 @@ body {
 }
 
 .aviso-btn {
-  font-size: 17px;
+  font-size: 15px;
   width: 135px;
-  height: 90px;
+  height: 65px;
   text-align: center;
   background-color: #554b8b;
   border: 1px solid #63636346;
@@ -38,4 +39,47 @@ body {
 .aviso-btn a {
   text-decoration: none;
   color: #ffffff;
+}
+
+.aviso-esc {
+  padding: 20px 75px 20px 15px;
+  text-decoration: none;
+  color: white;
+  background: #2e2755;
+  border-radius: 5px 5px 0px 0px;
+  border: 1px solid transparent;
+  width: 500px;
+  font-size: 17px;
+  margin: 50px 0px 0px 3px;
+}
+
+a#avs_esc {
+  padding-left: 10px;
+}
+
+.mensagem {
+  background: white;
+  width: 300px;
+  height: 105px;
+  border: 1px solid black;
+  border-radius: 20px;
+  margin: 20px 0px 0px 20px;
+  padding: 0px 0px 0px 20px;
+}
+
+.mensagem p {
+  color: black;
+  line-height: 10px;
+}
+
+.mensagem a {
+  text-decoration: none;
+}
+
+#titulo {
+  font-weight: bold;
+} 
+
+#data, #info {
+  font-size: 15px;
 }
