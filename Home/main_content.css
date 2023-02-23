@@ -68,7 +68,7 @@ a#avs_esc {
 }
 
 .mensagem:hover {
-  background: rgba(128, 128, 128, 0.795);
+  background: rgb(156, 156, 156);
 }
 
 .mensagem p {
