@@ -67,6 +67,10 @@ a#avs_esc {
   padding: 0px 0px 0px 20px;
 }
 
+.mensagem:hover {
+  background: rgba(128, 128, 128, 0.795);
+}
+
 .mensagem p {
   color: black;
   line-height: 13px;
