@@ -1,0 +1,58 @@
+body {
+    background: #20a1e8;
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  .titulo_pagina {
+    background: white;
+    border: 2px solid black;
+    border-radius: 15px;
+    margin-top: 100px;
+    margin-left: 20px;
+    width: 650px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 25px;
+  }
+  
+  #titulo {
+    font-size: 22px;
+    font-weight: bold;
+  }
+  
+  #descricao {
+    font-size: 18px;
+  }
+  
+  .mensagem {
+    background: white;
+    border: 1px solid black;
+    border-radius: 15px;
+    margin-top: 40px;
+    margin-left: 20px;
+    width: 510px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 25px;
+  }
+  
+  .mensagem a {
+    text-decoration: none;
+  }
+  
+  p#info_mensagem {
+    padding-right: 45px;
+  }
+  
+  #titulo_mensagem {
+    font-size: 18px;
+    font-weight: bold;
+    color: black;
+  }
+  
+  #info_mensagem, #data_mensagem {
+    font-size: 16px;
+    color: black;
+  }
+  
