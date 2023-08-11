@@ -3,7 +3,6 @@
     width: 150px;
     height: 40px;
     font-size: 16px;
-    margin: 5px;
     background-color: transparent;
     color: black;
     text-align: center;
@@ -11,5 +10,16 @@
     text-decoration: none;
     border: 1px solid black;
     border-radius: 15px;
+    position: relative;
+    margin-right: 15px;
 }
   
+a#coluna_2 {
+    top: 60px;
+    right: 515px;
+}
+
+a#coluna_3 {
+    top: 122px;
+    right: 1029px;
+}
