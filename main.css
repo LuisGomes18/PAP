@@ -11,6 +11,10 @@ body {
     position: relative;
 }
 
+main {
+    width: 0;
+}
+
 #titlo_pagina {
     top: 130px;
     left: 20px;
