@@ -1,4 +1,9 @@
-.botoes_nav {
+nav {
+    margin-top: 25px;
+    margin-left: 25px;
+}
+
+#botoes_nav {
     display: inline-block;
     width: 150px;
     height: 40px;
@@ -13,13 +18,13 @@
     position: relative;
     margin-right: 15px;
 }
-  
-a#coluna_2 {
-    top: 60px;
-    right: 480px;
+
+a.botao_2 {
+    top: 55px;
+    right: 514px;
 }
 
-a#coluna_3 {
-    top: 122px;
-    right: 1029px;
+a.botao_3 {
+    top: 70px;
+    right: 0px;
 }
