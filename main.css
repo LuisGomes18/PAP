@@ -6,3 +6,14 @@
 body {
     font-family: 'Reboto', sans-serif;
 }
+
+* {
+    position: relative;
+}
+
+#titlo_pagina {
+    top: 130px;
+    left: 20px;
+    font-weight: bold;
+    font-size: 35px;
+}
