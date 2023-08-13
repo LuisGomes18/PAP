@@ -1,4 +1,3 @@
 .vscode/
-*.pdf
-test/noticias/index.html
-test/noticias/style.css
+test/
+relatorios/
