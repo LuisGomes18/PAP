@@ -5,7 +5,7 @@ function validateLogin() {
   
     if (username === "luis" && password === "luiscogomes") {
       loginStatus.innerHTML = "Login bem-sucedido!";
-      window.location.href = "home.html"; // Redirecionar para a página home
+      window.location.href = "../home/index.html";
     } else {
       loginStatus.innerHTML = "Credenciais inválidas. Tente novamente.";
     }

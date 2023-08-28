@@ -1,5 +1,5 @@
-.modo_escuro {
-    color: black;
+.modo_claro {
+    color: white;
     text-decoration: none;
     left: 1350px;
     bottom: 298px;
@@ -8,12 +8,12 @@
     border-radius: 15px;
     font-weight: bold;
     font-size: 17px;
-    background: transparent;
+    background: #084a88;
 }
 
 .botao_login {
     bottom: 296px;
     left: 1330px;
     text-decoration: none;
-    color: black;
+    color: white;
 }
