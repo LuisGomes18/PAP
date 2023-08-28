@@ -1,10 +1,11 @@
+#* HTML
 .vscode/
 test/
-relatorios/
+acessibilidade/
 
-# Server
+#* Server
 server/venv.sh
 server/env
 
-#TMP
+#! TMP
 server/

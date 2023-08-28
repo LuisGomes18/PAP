@@ -39,3 +39,7 @@ button.botao {
 .senha_nome {
     top: 10px;
 }
+
+p#login-status {
+  top: 20px;
+}
