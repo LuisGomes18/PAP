@@ -4,8 +4,5 @@ test/
 acessibilidade/
 
 #* Server
-server/venv.sh
-server/env
-
-#! TMP
-server/
+node_modules/
+server.js
