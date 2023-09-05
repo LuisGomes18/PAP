@@ -17,3 +17,16 @@
     text-decoration: none;
     color: black;
 }
+
+i.fa-solid.fa-right-from-bracket {
+    margin: 0;
+    padding: 0;
+    top: -240px;
+    left: 1280px;
+}
+
+a.logout {
+    color: black;
+    text-decoration: none;
+    background: transparent;
+}
