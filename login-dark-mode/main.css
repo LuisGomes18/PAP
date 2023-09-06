@@ -1,0 +1,61 @@
+@font-face {
+  font-family: "Reboto";
+  src: url("../font/Roboto-Regular.ttf") format("truetype");
+}
+
+* {
+  position: relative;
+}
+
+body,
+html {
+  height: 100%;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #084a88;
+  font-family: "Reboto", sans-serif;
+}
+
+.login-container {
+  text-align: center;
+  padding: 20px;
+  background-color: #083258;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.377);
+}
+
+button.botao {
+  top: 28px;
+  right: 100px;
+}
+
+.senha {
+    top: 10px;
+    left: 5px;
+}
+
+.senha_nome {
+    top: 10px;
+}
+
+p#login-status {
+  top: 20px;
+}
+
+h2, label, p {
+  color: #fff;
+}
+
+input {
+  background: #08315883;
+  border: 1px solid white;
+  color: white;
+}
+
+button {
+  border: 1px solid white;
+  background: transparent;
+  color: white;
+}
