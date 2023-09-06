@@ -5,10 +5,6 @@ acessibilidade/
 ideias_novas/
 
 #* JavaScript
-
-    #* Server
-server.js
-
 # Logs
 logs
 *.log
