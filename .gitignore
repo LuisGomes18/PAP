@@ -3,6 +3,7 @@
 test/
 acessibilidade/
 ideias_novas/
+*.txt
 
 #* JavaScript
 # Logs
