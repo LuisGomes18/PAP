@@ -1,0 +1,32 @@
+.modo_escuro {
+    color: black;
+    text-decoration: none;
+    left: 1350px;
+    bottom: 540px;
+    border: 2px solid black;
+    padding: 10px;
+    border-radius: 15px;
+    font-weight: bold;
+    font-size: 17px;
+    background: transparent;
+}
+
+.botao_login {
+    bottom: 540px;
+    left: 1330px;
+    text-decoration: none;
+    color: black;
+}
+
+i.fa-solid.fa-right-from-bracket {
+    margin: 0;
+    padding: 0;
+    left: 1280px;
+    top: -470px;
+}
+
+a.logout {
+    color: black;
+    text-decoration: none;
+    background: transparent;
+}

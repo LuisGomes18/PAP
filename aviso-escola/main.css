@@ -1,0 +1,65 @@
+@font-face {
+    font-family: 'Reboto'; 
+    src: url('../font/Roboto-Regular.ttf') format('truetype'); 
+}
+
+body {
+    font-family: 'Reboto', sans-serif;
+}
+
+* {
+    position: relative;
+}
+
+main {
+    width: 0;
+}
+
+#titlo_pagina {
+    left: 20px;
+    font-weight: bold;
+    font-size: 35px;
+}
+
+
+/** Noticias */
+
+a#link_noticia {
+    text-decoration: none;
+    color: black;
+}
+
+#noticia, #noticia_2, #noticia_3 {
+    border: 1px solid #000;
+    padding: 20px;
+    width: 395px;
+    height: 155px;
+    box-sizing: border-box;
+    border-radius: 15px;
+    left: 30px;
+}
+
+article#noticia_2 {
+    top: 20px;
+}
+
+article#noticia_3 {
+    top: 40px;
+}
+
+.titulo {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.descricao {
+    font-size: 16px;
+    color: #000000;
+    margin-bottom: 5px;
+}
+
+.data {
+    font-size: 14px;
+    color: #333333;
+}
