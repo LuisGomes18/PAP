@@ -3,14 +3,11 @@ function validateLogin() {
   var password = document.getElementById("password").value;
   var loginStatus = document.getElementById("login-status");
 
-  // Defina um array de usuários e senhas válidos
   var users = [
     { username: "luis", password: "luiscogomes" },
-    { username: "joao", password: "senha123" },
-    // Adicione mais pares de usuário e senha conforme necessário
+    { username: "ColorAD", password: "ColorAD" },
   ];
 
-  // Verifique se as credenciais correspondem a um usuário válido
   var isValidUser = users.some(function (user) {
     return user.username === username && user.password === password;
   });
