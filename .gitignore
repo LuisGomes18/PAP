@@ -1,6 +1,5 @@
 #* HTML e outros
 .vscode/
-*.txt
 old_code/
 *.sh
 
