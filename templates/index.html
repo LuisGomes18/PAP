@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='nav.css') }}">
+    <title>PAP Home</title>
+</head>
+
+<body>
+    <nav>
+        <a id="botao_1" class="botoes" href="{{ url_for('index') }}">Home</a>
+        <a id="botao_2" class="botoes" href="{{ url_for('sem_acesso') }}">Aviso Escola</a>
+        <a id="botao_3" class="botoes" href="{{ url_for('sem_acesso') }}">Aviso Professores</a>
+        <a id="botao_4" class="botoes" href="{{ url_for('sem_acesso') }}">Horario</a>
+        <a id="linha_2" class="botoes" href="{{ url_for('sem_acesso') }}">Faltas</a>
+        <a id="linha_2" class="botoes" href="{{ url_for('sem_acesso') }}">Participações</a>
+        <a id="linha_3" class="botoes" href="{{ url_for('sem_acesso') }}">Ementa</a>
+        <a id="linha_3" class="botoes" href="{{ url_for('sem_acesso') }}">Calendario</a>
+        <a id="linha_3" class="botoes" href="{{ url_for('sem_acesso') }}">Avaliações</a>
+    </nav>
+
+</body>
+</html>

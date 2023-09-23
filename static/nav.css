@@ -1,0 +1,43 @@
+html, body {
+    width: 0;
+    height: 0;
+}
+
+* {
+    position: relative;
+}
+
+nav {
+    margin-top: 25px;
+    margin-left: 25px;
+}
+
+a.botoes {
+    display: inline-block;
+    width: 150px;
+    height: 40px;
+    font-size: 16px;
+    background: transparent;
+    color: black;
+    text-align: center;
+    line-height: 40px;
+    text-decoration: none;
+    border: 1px solid black;
+    border-radius: 15px;
+    position: relative;
+}
+
+
+#botao_2 {
+    left: 180px;
+    bottom: 42px;
+}
+
+#botao_3 {
+    left: 360px;
+    bottom: 83px;
+}
+
+#botao_4 {
+    bottom: 60px;
+}
