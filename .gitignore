@@ -1,9 +1,7 @@
 #* HTML e outros
 .vscode/
-test/
-acessibilidade/
-ideias_novas/
 *.txt
+old_code/
 
 #* JavaScript
 # Logs
