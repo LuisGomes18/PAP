@@ -17,5 +17,10 @@ def sem_acesso():
     '''Rederiza a pagina sem_acesso'''
     return render_template('sem_acesso/index.html')
 
+@app.route('/login')
+def login():
+    '''Rederiza a pagina login'''
+    return render_template('login/index.html')
+
 if __name__ == '__main__':
     app.run(debug=True, host='0.0.0.0', port=5000)
