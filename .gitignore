@@ -2,6 +2,7 @@
 .vscode/
 old_code/
 *.sh
+test/
 
 #* JavaScript
 # Logs

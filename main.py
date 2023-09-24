@@ -3,9 +3,12 @@ Flask: Modulo para criar aplicacoes web
 '''
 from flask import Flask # pylint: disable=import-error
 from flask import render_template # pylint: disable=import-error
+import logging
 
 
 app = Flask(__name__, static_url_path='/static')
+
+logging.basicConfig(filename='Server {data}.log', level=logging.INFO)
 
 @app.route('/')
 def index():
