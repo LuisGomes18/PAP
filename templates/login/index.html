@@ -3,9 +3,29 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='main_login.css') }}">
     <title>PAP Login</title>
 </head>
 <body>
-    <h1>Login</h1>
+    <main>
+        <section>
+            <h2>Login</h2>
+        </section>
+        <section>
+            <form id="login-form" method="POST" action="/login">
+                <span>
+                    <label for="username">Username</label>
+                    <input type="text" name="username" id="username" placeholder="Username" required>
+                </span>
+                <span>
+                    <label for="password">Password</label>
+                    <input type="password" name="password" id="password" placeholder="Password" required>
+                </span>
+                <span>
+                    <input type="submit" value="Login" class="fazer_login">
+                </span>
+            </form>
+        </section>
+    </main>
 </body>
 </html>

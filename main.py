@@ -3,12 +3,15 @@ Flask: Modulo para criar aplicacoes web
 '''
 from flask import Flask # pylint: disable=import-error
 from flask import render_template # pylint: disable=import-error
-import logging
+from flask import request
+from flask import redirect
+from flask import url_for
+from flask import session
 
 
 app = Flask(__name__, static_url_path='/static')
 
-logging.basicConfig(filename='Server {data}.log', level=logging.INFO)
+app.secret_key = 'luismelhor'
 
 @app.route('/')
 def index():
@@ -20,10 +23,25 @@ def sem_acesso():
     '''Rederiza a pagina sem_acesso'''
     return render_template('sem_acesso/index.html')
 
-@app.route('/login')
+@app.route('/login', methods=['GET', 'POST'])
 def login():
-    '''Rederiza a pagina login'''
+    '''Renders the login page and handles login logic.'''
+    if request.method == 'POST':
+        username = request.form['username']
+        password = request.form['password']
+
+        # Check if the provided username and password are valid
+        # You should implement your own authentication logic here
+        if is_valid_login(username, password):
+            session['username'] = username
+            return redirect(url_for('index'))
+
+        return 'Invalid username or password'
+
     return render_template('login/index.html')
+
+def is_valid_login(username, password):
+    return username == "luisgomes" and password == "luis"
 
 if __name__ == '__main__':
     app.run(debug=True, host='0.0.0.0', port=5000)
