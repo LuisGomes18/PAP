@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='nav_home.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='main_home.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='aside.css') }}">
+    <title>PAP Homepage</title>
+</head>
+
+<body>
+    <nav>
+        <a id="botao_1" class="botoes" href="{{ url_for('index') }}">Home</a>
+        <a id="botao_2" class="botoes" href="{{ url_for('sem_acesso') }}">Aviso Escola</a>
+        <a id="botao_3" class="botoes" href="{{ url_for('sem_acesso') }}">Aviso Professores</a>
+        <a id="botao_4" class="botoes" href="{{ url_for('sem_acesso') }}">Horario</a>
+        <a id="botao_5" class="botoes" href="{{ url_for('sem_acesso') }}">Faltas</a>
+        <a id="botao_6" class="botoes" href="{{ url_for('sem_acesso') }}">Participações</a>
+        <a id="botao_7" class="botoes" href="{{ url_for('sem_acesso') }}">Ementa</a>
+        <a id="botao_8" class="botoes" href="{{ url_for('sem_acesso') }}">Calendario</a>
+        <a id="botao_9" class="botoes" href="{{ url_for('sem_acesso') }}">Avaliações</a>
+    </nav>
+    <main>
+        <section class="section_titlo">
+            <h1 class="titlo">Noticias Escolares</h1>
+        </section>
+        <section class="noticia" id="noticia_1">
+            <a href="#">
+                <h2 class="titlo_noticia">Titulo da Noticia</h2>
+                <h3 class="data_noticia">Data da Noticia</h3>
+                <p class="texto_noticia">Lorem ipsum </p>
+            </a>
+        </section>
+    </main>
+    <aside>
+        <a href="{{ url_for('login') }}" class="login">Login</a>
+    </aside>
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</body>
+
+</html>

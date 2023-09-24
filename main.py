@@ -32,8 +32,7 @@ def login():
 
         if is_valid_login(username, password):
             session['username'] = username
-            return redirect(url_for('index'))
-
+            return redirect(url_for('home')) 
         return 'Invalid username or password'
 
     return render_template('login/index.html')
@@ -41,6 +40,11 @@ def login():
 def is_valid_login(username, password):
     '''Valida o login'''
     return username == "luisgomes" and password == "luis"
+
+@app.route('/home')
+def home():
+    '''Rederiza a pagina home'''
+    return render_template('home/index.html')
 
 if __name__ == '__main__':
     app.run(debug=True, host='0.0.0.0', port=5000)
