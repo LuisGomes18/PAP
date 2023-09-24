@@ -29,7 +29,7 @@ def login():
     if request.method == 'POST':
         username = request.form['username']
         password = request.form['password']
-        
+
         if is_valid_login(username, password):
             session['username'] = username
             return redirect(url_for('index'))
