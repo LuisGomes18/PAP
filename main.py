@@ -29,9 +29,7 @@ def login():
     if request.method == 'POST':
         username = request.form['username']
         password = request.form['password']
-
-        # Check if the provided username and password are valid
-        # You should implement your own authentication logic here
+        
         if is_valid_login(username, password):
             session['username'] = username
             return redirect(url_for('index'))
@@ -41,6 +39,7 @@ def login():
     return render_template('login/index.html')
 
 def is_valid_login(username, password):
+    '''Valida o login'''
     return username == "luisgomes" and password == "luis"
 
 if __name__ == '__main__':
