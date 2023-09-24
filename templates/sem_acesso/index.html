@@ -3,11 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PAP Sem Acesso</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='main_sem_acesso.css') }}">
+    <title>PAP 401</title>
 </head>
 
 <body>
-    <h4>Sem acesso</h4>
-    <a href="{{ url_for('index') }}">Inicial</a>
+    <main>
+        <h1>Erro 401 - Não autorizado</h1>
+        <p>Voçe não tem autorização para acessar esta página</p>
+        <a href="{{ url_for('index') }}">Inicial</a>
+    </main>
 </body>
 </html>
