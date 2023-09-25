@@ -13,6 +13,21 @@ app = Flask(__name__, static_url_path='/static')
 
 app.secret_key = 'luismelhor'
 
+def is_valid_login(username, password):
+    '''Valida o login'''
+    if username == "luisgomes" and password == "luis":
+        return True
+    elif username == "colorad" and password == "colorad":
+        return True
+    else:
+        return False
+
+@app.route('/logout')
+def logout():
+    '''Rederiza a pagina logout'''
+    session.pop('username', None)
+    return redirect(url_for('index'))
+
 @app.route('/')
 def index():
     '''Rederiza a pagina index'''
@@ -37,14 +52,15 @@ def login():
 
     return render_template('login/index.html')
 
-def is_valid_login(username, password):
-    '''Valida o login'''
-    return username == "luisgomes" and password == "luis"
-
 @app.route('/home')
 def home():
     '''Rederiza a pagina home'''
     return render_template('home/index.html')
+
+@app.route('/aviso_escola')
+def aviso_escola():
+    '''Rederiza a pagina aviso_escola'''
+    return render_template('aviso_escola/index.html')
 
 if __name__ == '__main__':
     app.run(debug=True, host='0.0.0.0', port=5000)
