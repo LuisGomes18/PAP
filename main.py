@@ -32,7 +32,7 @@ def login():
 
         if is_valid_login(username, password):
             session['username'] = username
-            return redirect(url_for('home')) 
+            return redirect(url_for('home'))
         return 'Invalid username or password'
 
     return render_template('login/index.html')
