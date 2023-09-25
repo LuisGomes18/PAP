@@ -1,8 +1,8 @@
 '''
 Flask: Modulo para criar aplicacoes web
 '''
-from flask import Flask # pylint: disable=import-error
-from flask import render_template # pylint: disable=import-error
+from flask import Flask
+from flask import render_template
 from flask import request
 from flask import redirect
 from flask import url_for
