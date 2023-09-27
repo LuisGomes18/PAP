@@ -15,7 +15,6 @@ Repositorio para PAP
 ```bash
 git clone https://github.com/LuisGomes18/PAP
 cd PAP
-source venv/bin/activate
 pip install -r install requirements.txt
 python3 main.py
 ```
