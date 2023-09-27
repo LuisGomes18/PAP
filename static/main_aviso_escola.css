@@ -1,0 +1,48 @@
+@font-face {
+    font-family: 'Reboto';
+    src: url('font/Roboto-Regular.ttf') format('truetype');
+}
+
+html, body {
+    font-family: 'Reboto', sans-serif;
+}
+
+* {
+    position: relative;
+}
+
+main {
+    width: 500px;
+}
+
+.section_titlo {
+    width: 500px;
+}
+
+.titlo_pagina {
+    font-size: 35px;
+    top: 10px;
+    left: 15px;
+}
+
+.noticia {
+    border: 1px solid black;
+    border-radius: 15px;
+    padding: 10px;
+    padding-left: 25px !important;
+    width: 280px !important;
+    left: 25px;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+#noticia_1 {
+    top: 15px;
+}
+
+#noticia_2 {
+    top: 55px;
+}

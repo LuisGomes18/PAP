@@ -1,0 +1,25 @@
+.nome {
+    text-decoration: none;
+    color: black;
+    text-transform: uppercase;
+    bottom: 410px;
+    left: 1050px;
+}
+
+.logout {
+    border: 1px solid black;
+    border-radius: 15px;
+    padding: 10px;
+    font-weight: bold;
+    left: 1180px;
+    bottom: 450px;
+}
+
+.home {
+    border: 1px solid black;
+    border-radius: 15px;
+    padding: 10px;
+    font-weight: bold;
+    left: 1110px;
+    bottom: 390px;
+}

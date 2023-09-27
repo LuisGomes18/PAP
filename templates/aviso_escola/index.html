@@ -9,6 +9,27 @@
     <title>PAP Aviso Escola</title>
 </head>
 <body>
-    <h1>Aviso Escola</h1>
+    <section class="section_titlo">
+        <h1 class="titlo_pagina">Aviso Escola</h1>
+    </section>
+    <section class="noticia" id="noticia_1">
+        <a href="#">
+            <h2 class="titlo_noticia">Titulo da Noticia</h2>
+            <h3 class="data_noticia">Data da Noticia</h3>
+            <p class="texto_noticia">Lorem ipsum </p>
+        </a>
+    </section>
+    <section class="noticia" id="noticia_2">
+        <a href="#">
+            <h2 class="titlo_noticia">Titulo da Noticia</h2>
+            <h3 class="data_noticia">Data da Noticia</h3>
+            <p class="texto_noticia">Lorem ipsum </p>            
+        </a>
+    </section>
+    <aside>
+        <p class="nome">Luis Gomes</p>
+        <a href="{{ url_for('logout') }}" class="logout">Logout</a>
+        <a href="{{ url_for('home') }}" class="home">Home</a>
+    </aside>
 </body>
 </html>
