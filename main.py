@@ -59,5 +59,6 @@ def area_de_utilizador():
 def aviso_escola():
     return render_template('aviso_escola/index.html')
 
+
 if __name__ == '__main__':
     app.run(debug=True, host='0.0.0.0', port=5000)
