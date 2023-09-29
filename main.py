@@ -13,8 +13,19 @@ app = Flask(__name__, static_url_path='/static')
 
 app.secret_key = 'luismelhor'
 
+@app.route('/')
+def index():
+    return render_template('index.html')
+
+@app.route('/pagina_inicial')
+def pagina_inicial():
+    return render_template('pagina_inicial/index.html')
+
+@app.route('/sem_acesso')
+def sem_acesso():
+    return render_template('sem_acesso/index.html')
+
 def is_valid_login(username, password):
-    '''Valida o login'''
     if username == "luisgomes" and password == "luis":
         return True
     elif username == "colorad" and password == "colorad":
@@ -22,44 +33,30 @@ def is_valid_login(username, password):
     else:
         return False
 
-@app.route('/logout')
-def logout():
-    '''Rederiza a pagina logout'''
-    session.pop('username', None)
-    return redirect(url_for('index'))
-
-@app.route('/')
-def index():
-    '''Rederiza a pagina index'''
-    return render_template('index.html')
-
-@app.route('/sem_acesso')
-def sem_acesso():
-    '''Rederiza a pagina sem_acesso'''
-    return render_template('sem_acesso/index.html')
-
 @app.route('/login', methods=['GET', 'POST'])
 def login():
-    '''Renders the login page and handles login logic.'''
     if request.method == 'POST':
         username = request.form['username']
         password = request.form['password']
 
         if is_valid_login(username, password):
             session['username'] = username
-            return redirect(url_for('home'))
+            return redirect(url_for('area_de_utilizador'))
         return 'Invalid username or password'
 
     return render_template('login/index.html')
 
-@app.route('/home')
-def home():
-    '''Rederiza a pagina home'''
-    return render_template('home/index.html')
+@app.route('/logout')
+def logout():
+    session.pop('username', None)
+    return redirect(url_for('index'))
+
+@app.route('/area_de_utilizador')
+def area_de_utilizador():
+    return render_template('area_de_utilizador/index.html')
 
 @app.route('/aviso_escola')
 def aviso_escola():
-    '''Rederiza a pagina aviso_escola'''
     return render_template('aviso_escola/index.html')
 
 if __name__ == '__main__':
