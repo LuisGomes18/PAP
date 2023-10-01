@@ -1,17 +1,50 @@
 '''
 Flask: Modulo para criar aplicacoes web
 '''
+from os import urandom
+
 from flask import Flask
 from flask import render_template
 from flask import request
 from flask import redirect
 from flask import url_for
 from flask import session
-
+from flask import jsonify
 
 app = Flask(__name__, static_url_path='/static')
 
-app.secret_key = 'luismelhor'
+IPS_PERMITIDOS = ["192.168.1.36", "192.168.1.21"] # Portatil e MSI
+MANUTENCAO = True
+
+app.secret_key = urandom(24)
+
+users = {
+    'luisgomes': 'luis',
+    'colorad': 'colorad'
+}
+
+@app.errorhandler(404)
+def not_found_error(error):
+    return render_template('nao_encontrado/index.html'), 404
+
+@app.before_request
+def verificar_modo_manutencao():
+    ip_cliente = request.remote_addr
+    if MANUTENCAO:
+        if ip_cliente not in IPS_PERMITIDOS:
+            return "O servidor está em manutenção. Tente novamente mais tarde.", 503
+
+@app.route('/atiar_manutencao')
+def ativar_manutencao():
+    global MANUTENCAO
+    MANUTENCAO = True
+    return "Modo de manutenção ativado."
+
+@app.route('/destivar_manutencao')
+def desativar_manutencao():
+    global MANUTENCAO
+    MANUTENCAO = False
+    return "Modo de manutenção desativado"
 
 @app.route('/')
 def index():
@@ -25,25 +58,16 @@ def pagina_inicial():
 def sem_acesso():
     return render_template('sem_acesso/index.html')
 
-def is_valid_login(username, password):
-    if username == "luisgomes" and password == "luis":
-        return True
-    elif username == "colorad" and password == "colorad":
-        return True
-    else:
-        return False
-
 @app.route('/login', methods=['GET', 'POST'])
 def login():
     if request.method == 'POST':
         username = request.form['username']
         password = request.form['password']
-
-        if is_valid_login(username, password):
+        if username in users and users[username] == password:
             session['username'] = username
             return redirect(url_for('area_de_utilizador'))
-        return 'Invalid username or password'
-
+        else:
+            return 'Credenciais Invalidas. <a href="/login">Tente Novamente</a>'
     return render_template('login/index.html')
 
 @app.route('/logout')
@@ -53,7 +77,9 @@ def logout():
 
 @app.route('/area_de_utilizador')
 def area_de_utilizador():
-    return render_template('area_de_utilizador/index.html')
+    if 'username' in session:
+        return render_template('area_de_utilizador/index.html')
+    return 'Voçe não esta logado. <a href="/login">Faça Login </a>'
 
 @app.route('/aviso_escola')
 def aviso_escola():
