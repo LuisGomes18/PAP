@@ -9,12 +9,11 @@ from flask import request
 from flask import redirect
 from flask import url_for
 from flask import session
-from flask import jsonify
 
 app = Flask(__name__, static_url_path='/static')
 
 IPS_PERMITIDOS = ["192.168.1.36", "192.168.1.21"] # Portatil e MSI
-MANUTENCAO = True
+MANUTENCAO = False
 
 app.secret_key = urandom(24)
 
@@ -34,13 +33,13 @@ def verificar_modo_manutencao():
         if ip_cliente not in IPS_PERMITIDOS:
             return "O servidor está em manutenção. Tente novamente mais tarde.", 503
 
-@app.route('/atiar_manutencao')
+@app.route('/ativar_manutencao')
 def ativar_manutencao():
     global MANUTENCAO
     MANUTENCAO = True
     return "Modo de manutenção ativado."
 
-@app.route('/destivar_manutencao')
+@app.route('/desativar_manutencao')
 def desativar_manutencao():
     global MANUTENCAO
     MANUTENCAO = False
