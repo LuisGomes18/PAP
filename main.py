@@ -2,6 +2,8 @@
 Flask: Modulo para criar aplicacoes web
 '''
 from os import urandom
+import tkinter as tk
+import json
 
 from flask import Flask
 from flask import render_template
