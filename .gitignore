@@ -1,5 +1,1 @@
-# Editor de codigo
-.vscode/
-
-# Python
-venv/
+.venv/
