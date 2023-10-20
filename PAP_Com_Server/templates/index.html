@@ -5,30 +5,29 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/nav.css') }}">
     <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/body.css') }}">
     <title>PAP</title>
 </head>
 
 <body>
-    <nav>
-        <a href="#">Lorem</a>
-        <a href="#">ipsum</a>
-        <a href="#">dolor</a>
-        <a href="#">sit</a>
-        <a href="#">amet</a>
+    <nav class="navegacao">
+        <a href="#">Inicio</a>
+        <a href="#">Sobre</a>
+        <a href="#">Serviços</a>
+        <a href="#">Profissoes/Cursos</a>
+        <a href="#">Link Uteis</a>
+        <a href="#">Contacto</a>
     </nav>
     <body>
         <section>
-            <img src="{{ url_for('static', filename='img/perfil.jpeg') }}" alt="Perfil">
+            <img src="#" alt="Base">
+            <p>Psicologia na escola</p>
+            <p>Nos dias que não sabes o que escolher, escolhe a tua saude mental!</p>
         </section>
-        <section class="informacoes">
-            <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-                Nunc vitae dapibus odio, a euismod arcu. Quisque ornare, neque quis lobortis laoreet, 
-                felis lacus ultrices velit, in ornare ligula nulla non neque. Vivamus ac justo a dui fermentum rhoncus. 
-                Maecenas cursus aliquam ligula at blandit. Nullam tristique enim non lectus aliquam dictum. 
-                Praesent ut mauris euismod, scelerisque neque ut, imperdiet libero. Sed sollicitudin tortor lacus.
-            </p>
+        <section class="sobre">
+            <p>Sobre<p>
+            <p>O que é, como funciona, para que server a psicologia escolar?</p>
         </section>
     </body>
 </body>
