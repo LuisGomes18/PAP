@@ -1,35 +1,40 @@
 <!DOCTYPE html>
 <html lang="pt-PT">
-
 <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/nav.css') }}">
-    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/body.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/main.css') }}">
+    <script src="https://kit.fontawesome.com/e8a542327c.js" crossorigin="anonymous"></script>
     <title>PAP</title>
 </head>
-
 <body>
-    <nav class="navegacao">
-        <a href="#">Inicio</a>
-        <a href="#">Sobre</a>
-        <a href="#">Serviços</a>
-        <a href="#">Profissoes/Cursos</a>
-        <a href="#">Link Uteis</a>
+    <nav id="navbar">
+        <a href="#">
+            <i class="fas fa-envelope"></i>
+        </a>
         <a href="#">Contacto</a>
+        <a href="#">Link Uteis</a>
+        <a href="#">Profissões/Cursos</a>
+        <a href="#">Serviços</a>
+        <a href="#">Sobre</a>
+        <a href="#" class="active">Inicio</a>
     </nav>
-    <body>
-        <section>
-            <img src="#" alt="Base">
-            <p>Psicologia na escola</p>
-            <p>Nos dias que não sabes o que escolher, escolhe a tua saude mental!</p>
+    <main>
+        <section class="inicio">
+            <!--<img src="{{ url_for('static', filename='img/teste.jpg')}}" alt="Base" class="imagem_background"> -->
+            <p class="text-1">Psicologia<br> na escola</p>
+            <p class="text-2">Nos dias em que não sabes o que escolher, escolhe a tua saúde mental!</p> 
         </section>
         <section class="sobre">
-            <p>Sobre<p>
-            <p>O que é, como funciona, para que server a psicologia escolar?</p>
+            <p class="text-3">Sobre</p>
+            <p class="text-4">O que é, como funciona e para que serve a psicologia escolar?</p>
         </section>
-    </body>
+    </main>
+    <footer>
+        <a href="#"></a>
+    </footer>
+    <script src="{{url_for('static', filename='js/stick_navbar.js')}}"></script>
 </body>
-
 </html>
