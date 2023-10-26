@@ -1,5 +1,6 @@
 import psutil
 
+
 ram_info = psutil.virtual_memory()
 
 PERCENTAGEM_CPU = psutil.cpu_percent(interval=1)
@@ -14,4 +15,4 @@ elif RAM_TOTAL - RAM_USADA >= RAM_NECESSARIA:
 elif PERCENTAGEM_CPU >= 80:
     print('Porcentagem de CPU mais alta do que o necessário.')
 else:
-    print('Erro')
+    exit('Erro ao rodar o server', 1) # type: ignore
