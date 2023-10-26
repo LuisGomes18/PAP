@@ -10,7 +10,7 @@ RAM_NECESSARIA = 0.4 # 400 MB to GB
 
 if RAM_TOTAL - RAM_USADA > RAM_NECESSARIA and PERCENTAGEM_CPU < 80:
     print('Rodando o server')
-elif RAM_TOTAL - RAM_USADA >= RAM_NECESSARIA:
+elif RAM_TM_NECESSARIA:OTAL - RAM_USADA >= RAM_NECESSARIA:
     print('RAM necessária indisponível. Por favor, feche aplicativos desnecessários.')
 elif PERCENTAGEM_CPU >= 80:
     print('Porcentagem de CPU mais alta do que o necessário.')
