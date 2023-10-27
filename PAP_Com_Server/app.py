@@ -1,23 +1,32 @@
-import sys
-import os
-from os import path
+'''
+Platform: Recolher o sistema do usuario
+OS: Para uso do terminal e dos caminhos e gerar token do server
+PSUTIL: Recolher dados da CPU e RAM do pc
+SYS: Para fazer saidas do terminal
+FLASK: Para fazer o server HTML 
+'''
+
+import platform
+from os import system
 from psutil import virtual_memory
 from psutil import cpu_percent
-import platform
+import sys
+from os import getcwd
+from os import path
 
 from os import urandom
 from flask import Flask
 from flask import render_template
 
-def verificacao():
-    os.system('clear')
+def apagar_terminal():
     sistema_operacional = platform.system()
     if sistema_operacional == "Windows":
-        pass
+        system('cls')P
     elif sistema_operacional == "Linux":
-        verificacao_linux()
+        system('clear')
 
-def verificacao_linux():
+def verificacao():
+    apagar_terminal()
     ram_info = virtual_memory()
 
     PERCENTAGEM_CPU = cpu_percent(interval=1)
@@ -36,7 +45,7 @@ def verificacao_linux():
     else:
         sys.exit(1)
 
-    caminho = os.getcwd()
+    caminho = getcwd()
     pastas_verificar = [
         path.join(caminho, "PAP_Com_Server/static"),
         path.join(caminho, "PAP_Com_Server/templates"),
@@ -64,4 +73,4 @@ if __name__ == '__main__':
         '''Renderiza a pagina index'''
         return render_template('index.html')
 
-    app.run(host='0.0.0.0', port=5000)  # Inicie o servidor Flask após a verificação
+    app.run(host='0.0.0.0', port=5000)
