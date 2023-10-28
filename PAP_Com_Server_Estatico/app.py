@@ -18,6 +18,9 @@ from flask import Flask
 from flask import render_template
 
 def apagar_terminal():
+    '''
+    Função para limpar a tela
+    '''
     sistema_operacional = platform.system()
     if sistema_operacional == "Windows":
         system('cls')
@@ -25,6 +28,9 @@ def apagar_terminal():
         system('clear')
 
 def verificacao():
+    '''
+    Função para verificar RAM e CPU e ficheiros
+    '''
     apagar_terminal()
     ram_info = virtual_memory()
 
@@ -56,20 +62,19 @@ def verificacao():
             pass
         else:
             print(f'{item} não existe. Por favor, crie a pasta/ficheiro\n\n')
-            exit(1)
+            sys.exit(1)
 
     print('Teste de ficheiros passado\n\n')
 
 
 if __name__ == '__main__':
-    verificacao() 
+    verificacao()
 
-    app = Flask(__name__)
+    app = Flask(__name__, static_url_path='/static')
     app.secret_key = urandom(24)
 
     @app.route('/')
     def index():
         '''Renderiza a pagina index'''
         return render_template('index.html')
-
     app.run(host='0.0.0.0', port=5000)

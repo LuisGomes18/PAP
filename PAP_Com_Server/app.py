@@ -5,7 +5,6 @@ PSUTIL: Recolher dados da CPU e RAM do pc
 SYS: Para fazer saidas do terminal
 FLASK: Para fazer o server HTML 
 '''
-
 import platform
 from os import system
 from psutil import virtual_memory
@@ -19,13 +18,19 @@ from flask import Flask
 from flask import render_template
 
 def apagar_terminal():
+    '''
+    Função para limpar a tela
+    '''
     sistema_operacional = platform.system()
     if sistema_operacional == "Windows":
-        system('cls')P
+        system('cls')
     elif sistema_operacional == "Linux":
         system('clear')
 
 def verificacao():
+    '''
+    Função para verificar RAM e CPU e ficheiros
+    '''
     apagar_terminal()
     ram_info = virtual_memory()
 
@@ -57,13 +62,13 @@ def verificacao():
             pass
         else:
             print(f'{item} não existe. Por favor, crie a pasta/ficheiro\n\n')
-            exit(1)
+            sys.exit(1)
 
     print('Teste de ficheiros passado\n\n')
 
 
 if __name__ == '__main__':
-    verificacao() 
+    verificacao()
 
     app = Flask(__name__, static_url_path='/static')
     app.secret_key = urandom(24)
@@ -72,5 +77,4 @@ if __name__ == '__main__':
     def index():
         '''Renderiza a pagina index'''
         return render_template('index.html')
-
     app.run(host='0.0.0.0', port=5000)
