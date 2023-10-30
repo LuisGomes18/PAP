@@ -1,15 +1,7 @@
 <!DOCTYPE html>
 <html lang="pt-PT">
-<head>
-    <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-GRLF2CHCXK"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
 
-        gtag('config', 'G-GRLF2CHCXK');
-    </script>
+<head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -18,7 +10,12 @@
     <script src="https://kit.fontawesome.com/e8a542327c.js" crossorigin="anonymous"></script>
     <title>PAP</title>
 </head>
+
 <body>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TZW2W9TZ" height="0" width="0"
+            style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
     <nav id="navbar">
         <a href="#">
             <i class="fas fa-envelope"></i>
@@ -34,16 +31,34 @@
         <section class="inicio">
             <!--<img src="{{ url_for('static', filename='img/teste.jpg')}}" alt="Base" class="imagem_background"> -->
             <p class="text-1">Psicologia<br> na escola</p>
-            <p class="text-2">Nos dias em que não sabes o que escolher, escolhe a tua saúde mental!</p> 
+            <p class="text-2">Nos dias em que não sabes o que escolher, escolhe a tua saúde mental!</p>
         </section>
         <section class="sobre">
             <p class="text-3">Sobre</p>
             <p class="text-4">O que é, como funciona e para que serve a psicologia escolar?</p>
+            <div class="slideshow-container">
+                <div class="mySlides fade">
+                    <div class="numbertext">1 / 3</div>
+                    <img src="./img/sobre_1.png">
+                </div>
+
+                <div class="mySlides fade">
+                    <div class="numbertext">2 / 3</div>
+                    <img src="./img/sobre_2.png">
+                </div>
+            </div>
+            <br>
+            <div style="text-align:center">
+                <span class="dot"></span>
+                <span class="dot"></span>
+            </div>
         </section>
     </main>
     <footer>
         <a href="#"></a>
     </footer>
     <script src="./js/stick_navbar.js"></script>
+    <script src="./js/imagens.js"></script>
 </body>
+
 </html>
