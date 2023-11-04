@@ -1,6 +1,16 @@
 nav {
     background: rgb(27, 38, 44);
     overflow: hidden;
+    z-index: 100;
+    position: fixed;
+    width: 100%; 
+    top: 0;
+    left: 0;
+}
+
+.nav-container {
+    width: 1500px; 
+    margin: 0 auto; 
 }
 
 #navbar a {
@@ -16,14 +26,4 @@ nav {
 
 #navbar a.active {
     color: orange;
-}
-
-.stick {
-    position: fixed;
-    top: 0;
-    width: 100%;
-}
-
-.stick + .inicio {
-    padding-top:60px;
 }

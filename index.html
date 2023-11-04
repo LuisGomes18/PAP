@@ -22,16 +22,19 @@
 
 <body>
     <nav id="navbar">
-        <a href="#">
-            <i class="fas fa-envelope"></i>
-        </a>
-        <a href="#">Contacto</a>
-        <a href="#">Link Uteis</a>
-        <a href="#">Profissões/Cursos</a>
-        <a href="#">Serviços</a>
-        <a href="#">Sobre</a>
-        <a href="#" class="active">Inicio</a>
+        <div class="nav-container">
+            <a href="#inicio">
+                <i class="fas fa-envelope"></i>
+            </a>
+            <a href="#sobre">Contacto</a>
+            <a href="#">Link Uteis</a>
+            <a href="#">Profissões/Cursos</a>
+            <a href="#">Serviços</a>
+            <a href="#">Sobre</a>
+            <a href="#" class="active">Inicio</a>
+        </div>
     </nav>
+        
     <main>
         <section class="inicio">
             <!--<img src="{{ url_for('static', filename='img/teste.jpg')}}" alt="Base" class="imagem_background"> -->
@@ -60,7 +63,6 @@
     <footer>
         <a href="#"></a>
     </footer>
-    <script src="./js/stick_navbar.js"></script>
     <script src="./js/imagens.js"></script>
 </body>
 
