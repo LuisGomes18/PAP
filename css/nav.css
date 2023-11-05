@@ -1,3 +1,8 @@
+@font-face {
+    font-family: 'TitilliumWeb-Regular';
+    src: url('font/TitilliumWeb-Regular.ttf');
+}
+
 nav {
     background: rgb(27, 38, 44);
     overflow: hidden;
@@ -14,6 +19,7 @@ nav {
 }
 
 #navbar a {
+    font-family: 'TitilliumWeb-Regular', sans-serif;
     float: right;
     display: block;
     color: white;
