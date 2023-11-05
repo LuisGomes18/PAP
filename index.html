@@ -23,27 +23,29 @@
 <body>
     <nav id="navbar">
         <div class="nav-container">
-            <a href="#inicio">
+            <a href="#">
                 <i class="fas fa-envelope"></i>
             </a>
-            <a href="#sobre">Contacto</a>
+            <a href="#">Contacto</a>
             <a href="#">Link Uteis</a>
             <a href="#">Profissões/Cursos</a>
-            <a href="#">Serviços</a>
-            <a href="#">Sobre</a>
-            <a href="#" class="active">Inicio</a>
+            <a href="#serviços">Serviços</a>
+            <a href="#sobre">Sobre</a>
+            <a href="#inicio" class="active">Inicio</a>
         </div>
     </nav>
         
     <main>
-        <section class="inicio">
+        <section class="inicio" id="inicio">
             <!--<img src="{{ url_for('static', filename='img/teste.jpg')}}" alt="Base" class="imagem_background"> -->
             <p class="text-1">Psicologia<br> na escola</p>
             <p class="text-2">Nos dias em que não sabes o que escolher, escolhe a tua saúde mental!</p>
         </section>
 
-        <section class="sobre">
-            <p class="text-3">Sobre</p>
+        <section class="sobre" id="sobre">
+            <section class="texto-3">
+                <p class="text-3">Sobre</p>
+            </section>
             <section class="texto-4">
                 <p class="text-4">O que é, como funciona e para que serve a psicologia escolar?</p>
             </section>
@@ -61,6 +63,20 @@
                 <span class="dot"></span>
             </div>
         </section>
+
+        <section class="serviços" id="serviços">
+            <p class="text-5">Serviços</p>
+            <section class="apoio_psicologico">
+                <img src="./img/sobre_1.png" alt="sobre_1" class="redondado">
+                <p class="titlo_serviços">apoio psicologico</p>
+                <p class="descricao-serviços">- Questoões emocionais, comportamentais</p>
+            </section>
+            <section class="aprender-a-estudar">
+                <img src="./img/servicos_1.png" alt="sobre_1" class="redondado" id="img_2">
+                <p class="titlo_aprender-estudar">aprender a estudar</p>
+                <p class="descricao_aprender-estudar">- Hábitos e Métodos de Estudo</p>
+            </section>
+        </section>
     </main>
 
     <footer>
@@ -68,6 +84,7 @@
     </footer>
     
     <script src="./js/imagens.js"></script>
+    <script src="./js/nav_bar.js"></script>
 </body>
 
 </html>

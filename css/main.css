@@ -20,7 +20,7 @@
 body,
 html {
     z-index: 0;
-    background: #E3E2DE
+    background: #E3E2DE;
 }
 
 .imagem_background {
@@ -63,7 +63,11 @@ section.inicio {
     top: 140px;
 }
 
-.text-3 {
+section.texto-3 {
+    top: 425px;
+}
+
+.text-3, .text-5 {
     font-family: 'Dosis-Regular', sans-serif;
     text-transform: uppercase;
     font-size: 33.2245px;
@@ -73,7 +77,6 @@ section.inicio {
     display: flex;
     align-items: center;
     margin: 0 auto;
-    top: 425px;
 }
 
 section.texto-4 {
@@ -155,4 +158,56 @@ img {
 
 .div_doot {
     display: none;
+}
+
+.serviços {
+    top: 210px;
+    bottom: 26px;
+}
+
+img.redondado {
+    border: 1px solid transparent;
+    width: 132px;
+    height: 132px;
+    border-radius: 50%;
+    left: 336px;
+}
+
+section.apoio_psicologico {
+    top: 26px;
+}
+
+.titlo_serviços {
+    font-family: 'TitilliumWeb-Regular', sans-serif;
+    font-size: 20.625px;
+    text-transform: uppercase;
+    font-weight: bold;
+    left: 312px;
+}
+
+.descricao-serviços {
+    font-family: 'TitilliumWeb-Regular', sans-serif;
+    font-size: 16.6px;
+    left: 258px;
+}
+
+.titlo_aprender-estudar {
+    font-family: 'TitilliumWeb-Regular', sans-serif;
+    font-size: 20.625px;
+    text-transform: uppercase;
+    font-weight: bold;
+    left: 687px;
+    bottom: 210px;
+}
+
+.descricao_aprender-estudar {
+    font-family: 'TitilliumWeb-Regular', sans-serif;
+    font-size: 16.6px;
+    left: 675px;
+    bottom: 210px;
+}
+
+#img_2 {
+    bottom: 210px;
+    left: 726px;
 }
