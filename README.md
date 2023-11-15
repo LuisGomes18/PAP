@@ -7,6 +7,7 @@ Bem-vindo ao repositório do Projeto de Avaliação Profissional (PAP). Este rep
 ## Requisitos do Sistema
 
 - Qualquer Sistema Operativo
+- Qualquer Nagegador
 
 &nbsp;
 
