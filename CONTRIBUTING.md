@@ -44,7 +44,7 @@ Obrigado por considerar contribuir para o nosso projeto! Sua participação é v
 
 ## Licença
 
-Este projeto está licenciado sob a [lICENSE]. Consulte o arquivo LICENSE.md para obter mais informações.
+Este projeto está licenciado sob a [LICENSE](LICENSE). Consulte o arquivo [LICENSE](LICENSE) para obter mais informações.
 
 ## Agradecimentos
 
