@@ -4,18 +4,11 @@
 }
 
 nav {
-    background: rgb(27, 38, 44);
-    overflow: hidden;
-    z-index: 100;
+    background: #2f1e0a; /* Mudar */
     position: fixed;
     width: 100%; 
     top: 0;
     left: 0;
-}
-
-.nav-container {
-    width: 1500px; 
-    margin: 0 auto; 
 }
 
 #navbar a {
@@ -30,6 +23,6 @@ nav {
     font-weight: bold;
 }
 
-#navbar a.active {
+#navbar a:hover {
     color: orange;
 }

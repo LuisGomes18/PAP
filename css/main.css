@@ -1,16 +1,16 @@
 @font-face {
     font-family: 'Caveat-Regular';
-    src: url('font/Caveat-Regular.ttf');
+    src: url('../font/Caveat-Regular.ttf');
 }
 
 @font-face {
     font-family: 'TitilliumWeb-Regular';
-    src: url('font/TitilliumWeb-Regular.ttf');
+    src: url('../font/TitilliumWeb-Regular.ttf');
 }
 
 @font-face {
     font-family: 'Dosis-Regular';
-    src: url('font/Dosis-Regular.ttf');
+    src: url('../font/Dosis-Regular.ttf');
 }
 
 * {
@@ -20,19 +20,12 @@
 body,
 html {
     z-index: 0;
-    background: #E3E2DE;
+    background: #FFD22F;
+    color: #000000;
 }
 
-.imagem_background {
-    z-index: 0;
-    display: block;
-    max-width: 100%;
-    height: auto;
-}
 
-section.sobre {
-    z-index: 1;
-}
+/** INICIO **/
 
 section.inicio {
     text-align: center;
@@ -46,7 +39,7 @@ section.inicio {
     line-height: 1;
     display: flex;
     justify-content: center;
-    top: 199px;
+    top: 100px;
 }
 
 .text-2 {
@@ -59,155 +52,14 @@ section.inicio {
     display: flex;
     align-items: center;
     margin: 0 auto;
-    font-size: 22px;
-    top: 140px;
+    font-size: 32px;
+    top: 80px;
 }
 
-section.texto-3 {
-    top: 425px;
-}
 
-.text-3, .text-5 {
-    font-family: 'Dosis-Regular', sans-serif;
-    text-transform: uppercase;
-    font-size: 33.2245px;
-    padding: 0 20px 10px 20px;
-    border-bottom: 3px solid black;
-    width: 120px;
-    display: flex;
-    align-items: center;
-    margin: 0 auto;
-}
-
-section.texto-4 {
-    height: 340px;
-    width: 545px;
-    background: #FFF;
-    top: 495px;
-    left: 75px;
-    z-index: 1;
-}
-
-.text-4 {
-    font-family: 'TitilliumWeb-Regular', sans-serif;
-    display: flex;
-    align-items: center;
-    margin: 0 auto;
-    font-size: 16.5px;
-    padding-top: 55px;
-    padding-left: 30px;
-    padding-right: 40px;
-    padding-bottom: 270px;
-}
-
-.mySlides {
-    display: none;
-}
-
-img {
-    vertical-align: middle;
-}
-
-.sobre_1, .sobre_2 {
-    width: 545px;
-    height: 440px;
-    left: 294px;
-    top: 17px;
-}
-
-.slideshow-container {
-    max-width: 1000px;
-    position: relative;
-    margin: auto;
-    top: 95px;
-}
-
-.dot {
-    height: 15px;
-    width: 15px;
-    margin: 0 2px;
-    background-color: transparent;
-    border-radius: 50%;
-    display: inline-block;
-    transition: background-color 0.6s ease;
-}
-
-.active {
-    background-color: #717171;
-}
-
-.fade {
-    animation-name: fade;
-    animation-duration: 1.5s;
-}
-
-@keyframes fade {
-    from {
-        opacity: .4
-    }
-    to {
-        opacity: 1
-    }
-}
-
-@media only screen and (max-width: 300px) {
-    .text {
-        font-size: 11px
-    }
-}
-
-.div_doot {
-    display: none;
-}
-
-.serviços {
-    top: 210px;
-    bottom: 26px;
-}
+/** IMAGENS */
 
 img.redondado {
     border: 1px solid transparent;
-    width: 132px;
-    height: 132px;
     border-radius: 50%;
-    left: 336px;
-}
-
-section.apoio_psicologico {
-    top: 26px;
-}
-
-.titlo_serviços {
-    font-family: 'TitilliumWeb-Regular', sans-serif;
-    font-size: 20.625px;
-    text-transform: uppercase;
-    font-weight: bold;
-    left: 312px;
-}
-
-.descricao-serviços {
-    font-family: 'TitilliumWeb-Regular', sans-serif;
-    font-size: 16.6px;
-    left: 258px;
-}
-
-.titlo_aprender-estudar {
-    font-family: 'TitilliumWeb-Regular', sans-serif;
-    font-size: 20.625px;
-    text-transform: uppercase;
-    font-weight: bold;
-    left: 687px;
-    bottom: 210px;
-}
-
-.descricao_aprender-estudar {
-    font-family: 'TitilliumWeb-Regular', sans-serif;
-    font-size: 16.6px;
-    left: 675px;
-    bottom: 210px;
-}
-
-#img_2 {
-    bottom: 210px;
-    left: 726px;
 }
