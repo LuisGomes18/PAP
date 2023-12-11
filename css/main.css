@@ -80,10 +80,11 @@ p.titlo-servicos {
     justify-content: center;
 }
 
+.texto {
+    width: 550px;
+    font-family: 'Dosis-Regular', sans-serif;
+}
 
-/** IMAGENS */
-
-img.redondado {
-    border: 1px solid transparent;
-    border-radius: 50%;
+.tl_apoio_psicologico {
+    top: 280px;
 }

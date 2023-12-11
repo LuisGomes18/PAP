@@ -1,2 +1,3 @@
 *.txt
-test/a
+a
+node_modules
