@@ -57,6 +57,19 @@ section.inicio {
 }
 
 
+/** SERVIÇOS **/
+
+p.titlo-servicos {
+    font-family: 'TitilliumWeb-Regular', sans-serif;
+    font-size: 32px;
+    font-weight: bold;
+    z-index: 1;
+    line-height: 1;
+    display: flex;
+    justify-content: center;
+    top: 255px;
+}
+
 /** IMAGENS */
 
 img.redondado {
