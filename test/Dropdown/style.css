@@ -8,7 +8,7 @@ html {
 
 @font-face {
     font-family: 'TitilliumWeb-Regular';
-    src: url('font/TitilliumWeb-Regular.ttf');
+    src: url('../font/TitilliumWeb-Regular.ttf');
 }
 
 nav {
@@ -34,7 +34,6 @@ nav {
 #navbar a:hover {
     color: orange;
 }
-
 
 .dropdown {
     float: left;
@@ -68,6 +67,7 @@ nav {
     text-decoration: none;
     display: block;
     text-align: left;
+    font-size: 10px;
 }
 
 .dropdown-content a:hover {

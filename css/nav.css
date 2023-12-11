@@ -4,16 +4,17 @@
 }
 
 nav {
-    background: #2f1e0a; /* Mudar */
+    background: #2f1e0a;
+    /* Mudar */
     position: fixed;
-    width: 100%; 
+    width: 100%;
     top: 0;
     left: 0;
 }
 
 #navbar a {
     font-family: 'TitilliumWeb-Regular', sans-serif;
-    float: right;
+    float: left;
     display: block;
     color: white;
     text-align: center;
@@ -25,4 +26,8 @@ nav {
 
 #navbar a:hover {
     color: orange;
+}
+
+.contactos {
+    top: 5px;
 }
