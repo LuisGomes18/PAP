@@ -31,18 +31,18 @@ section.inicio {
     text-align: center;
 }
 
-.text-1 {
+p.text-1 {
     font-family: 'Caveat-Regular', sans-serif;
     font-size: 79px;
     font-weight: bold;
-    z-index: 1;
+    z-index: -1;
     line-height: 1;
     display: flex;
     justify-content: center;
     top: 100px;
 }
 
-.text-2 {
+p.text-2 {
     font-family: 'Caveat-Regular', sans-serif;
     border-top: 1px solid black;
     border-bottom: 1px solid black;
@@ -54,6 +54,7 @@ section.inicio {
     margin: 0 auto;
     font-size: 32px;
     top: 80px;
+    z-index: -1;
 }
 
 
@@ -63,12 +64,22 @@ p.titlo-servicos {
     font-family: 'TitilliumWeb-Regular', sans-serif;
     font-size: 32px;
     font-weight: bold;
-    z-index: 1;
+    z-index: -1;
     line-height: 1;
     display: flex;
     justify-content: center;
     top: 255px;
 }
+
+.titlo {
+    font-family: 'TitilliumWeb-Regular', sans-serif;
+    font-size: 28px;
+    z-index: -1;
+    line-height: 1;
+    display: flex;
+    justify-content: center;
+}
+
 
 /** IMAGENS */
 
