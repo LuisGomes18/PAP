@@ -119,6 +119,7 @@ p.titlo_atividades-calendario {
     line-height: 1;
     display: flex;
     justify-content: center;
+    position: relative;
 }
 
 .tx_atividade-calendario {
@@ -150,5 +151,23 @@ p.titlo_atividades-calendario {
 
 .tx-ptva-2-ano {
     top: 780px;
+    left: 40px;
+}
+
+.tl-divulgacao-da-oferta-formaiva {
+    top: 840px;
+}
+
+.tx-divulgacao-da-oferta-formaiva {
+    top: 860px;
+    left: 40px;
+}
+
+.tl_portas-abertas {
+    top: 920px;
+}
+
+.tx-portas-aberta {
+    top: 940px;
     left: 40px;
 }
