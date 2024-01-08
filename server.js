@@ -27,5 +27,5 @@ app.get('/', (req, res) => {
 const server = http.createServer(app)
 
 server.listen(portaNormal, () => {
-    console.log(`> Servidor do site normal rodando em http://localhost:${portaNormal}`)
+    console.log(`> Servidor do site rodando em http://localhost:${portaNormal}`)
 })
