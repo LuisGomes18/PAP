@@ -1,0 +1,5 @@
+ports:
+  - name: Server
+    port: 3000
+    onOpen: open-browser
+    visibility: public
