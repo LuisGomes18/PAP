@@ -19,9 +19,9 @@
 
 body,
 html {
-    z-index: 0;
     background: #FFD22F;
     color: #000000;
+    z-index: -1;
 }
 
 
@@ -31,21 +31,20 @@ section.inicio {
     text-align: center;
 }
 
-.text-1 {
+p.text-1 {
     font-family: 'Caveat-Regular', sans-serif;
     font-size: 79px;
     font-weight: bold;
-    z-index: 1;
     line-height: 1;
     display: flex;
     justify-content: center;
     top: 100px;
 }
 
-.text-2 {
+p.text-2 {
     font-family: 'Caveat-Regular', sans-serif;
-    border-top: 1px solid black;
-    border-bottom: 1px solid black;
+    border-top: 1px solid #000000;
+    border-bottom: 1px solid #000000;
     padding-top: 20px;
     padding-bottom: 20px;
     width: 495px;
@@ -57,9 +56,118 @@ section.inicio {
 }
 
 
-/** IMAGENS */
+/** SERVIÇOS **/
 
-img.redondado {
-    border: 1px solid transparent;
-    border-radius: 50%;
+p.titlo_servicos {
+    font-family: 'TitilliumWeb-Regular', sans-serif;
+    font-size: 32px;
+    font-weight: bold;
+    line-height: 1;
+    display: flex;
+    justify-content: center;
+    top: 350px;
+}
+
+.titlo-servicos {
+    font-family: 'TitilliumWeb-Regular', sans-serif;
+    font-size: 28px;
+    line-height: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.texto-servicos {
+    width: 550px;
+    font-family: 'Dosis-Regular', sans-serif;
+}
+
+.tl-apoio_psicologico {
+    top: 350px;
+}
+
+.tx-apoio_psicologico {
+    top: 350px;
+    left: 40px;
+    z-index: inherit;
+}
+
+.tl-orientacao-escola_profissional {
+    top: 420px;
+}
+
+.tx-orientacao-escola_profissional {
+    top: 450px;
+    left: 40px;
+}
+
+
+/** ATIVIDADES E CALENDARIO **/
+
+p.titlo_atividades-calendario {
+    font-family: 'TitilliumWeb-Regular', sans-serif;
+    font-size: 32px;
+    font-weight: bold;
+    line-height: 1;
+    display: flex;
+    justify-content: center;
+    top: 600px;
+}
+
+.tl_atividade-calendario {
+    font-family: 'TitilliumWeb-Regular', sans-serif;
+    font-size: 28px;
+    line-height: 1;
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+.tx_atividade-calendario {
+    width: 550px;
+    font-family: 'Dosis-Regular', sans-serif;
+}
+
+.tl-educacao_inclusiva {
+    top: 600px;
+}
+
+.tx-educacao_inclusiva {
+    top: 620px;
+    left: 40px;
+}
+
+.tl-student-shadowing {
+    top: 680px;
+}
+
+.tx-student-shadowing {
+    top: 700px;
+    left: 40px;
+}
+
+.tl-ptva-2-ano {
+    top: 760px;
+}
+
+.tx-ptva-2-ano {
+    top: 780px;
+    left: 40px;
+}
+
+.tl-divulgacao-da-oferta-formaiva {
+    top: 840px;
+}
+
+.tx-divulgacao-da-oferta-formaiva {
+    top: 860px;
+    left: 40px;
+}
+
+.tl_portas-abertas {
+    top: 920px;
+}
+
+.tx-portas-aberta {
+    top: 940px;
+    left: 40px;
 }
