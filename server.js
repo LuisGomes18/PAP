@@ -12,13 +12,9 @@ app.get('/', (req, res) => {
     res.sendFile(path.join(__dirname, 'index.html'));
 });
 
-appAdmin.get('/', (req, res) => {
-    res.sendFile(path.join(__dirname, 'admin.html'));
-});
+const server = http.createServer(app);
 
-const serverNormal = http.createServer(app);
-
-serverNormal.listen(portaNormal, () => {
+server.listen(portaNormal, () => {
     console.log(`> Servidor do site normal rodando em http://localhost:${portaNormal}`);
 });
 
