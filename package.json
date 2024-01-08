@@ -1,0 +1,19 @@
+{
+  "name": "pap",
+  "version": "1.0.0",
+  "description": "Bem-vindo ao repositório do Projeto de Avaliação Profissional (PAP). Este repositório contém informações importantes sobre o projeto e as instalações necessárias.",
+  "main": "server.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}
