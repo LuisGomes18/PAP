@@ -1,17 +1,25 @@
+::root {
+    --cor-primaria: #ffff;
+    --cor-segundaria: #000;
+}
+
+
+/* SECTION - Fontes */
 @font-face {
     font-family: 'Caveat-Regular';
-    src: url('../font/Caveat-Regular.ttf');
+    src: url('../../font/Caveat-Regular.ttf');
 }
 
 @font-face {
     font-family: 'TitilliumWeb-Regular';
-    src: url('../font/TitilliumWeb-Regular.ttf');
+    src: url('../../font/TitilliumWeb-Regular.ttf');
 }
 
 @font-face {
     font-family: 'Dosis-Regular';
-    src: url('../font/Dosis-Regular.ttf');
+    src: url('../../font/Dosis-Regular.ttf');
 }
+/* !SECTION */
 
 * {
     position: relative;
@@ -19,110 +27,16 @@
 
 body,
 html {
-    background: #FFD22F;
+    background: #ffff;
     color: #000000;
     z-index: -1;
 }
 
-
-/** INICIO **/
-
-section.inicio {
+.titulo-pagina {
+    font-family: 'Dosis-Regular', sans-serif;
+    font-size: 5rem;
     text-align: center;
-}
-
-p.text-1 {
-    font-family: 'Caveat-Regular', sans-serif;
-    font-size: 79px;
+    text-transform: uppercase;
     font-weight: bold;
-    line-height: 1;
-    display: flex;
-    justify-content: center;
-    top: 100px;
-}
-
-p.text-2 {
-    font-family: 'Caveat-Regular', sans-serif;
-    border-top: 1px solid #000000;
-    border-bottom: 1px solid #000000;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    width: 495px;
-    display: flex;
-    align-items: center;
-    margin: 0 auto;
-    font-size: 32px;
-    top: 80px;
-}
-
-
-/** SERVIÇOS **/
-
-p.titlo_servicos {
-    font-family: 'TitilliumWeb-Regular', sans-serif;
-    font-size: 32px;
-    font-weight: bold;
-    line-height: 1;
-    display: flex;
-    justify-content: center;
-    top: 350px;
-}
-
-.titlo-servicos {
-    font-family: 'TitilliumWeb-Regular', sans-serif;
-    font-size: 28px;
-    line-height: 1;
-    display: flex;
-    justify-content: center;
-}
-
-.texto-servicos {
-    width: 550px;
-    font-family: 'Dosis-Regular', sans-serif;
-}
-
-.tl-apoio_psicologico {
-    top: 350px;
-}
-
-.tx-apoio_psicologico {
-    top: 350px;
-    left: 40px;
-    z-index: inherit;
-}
-
-.tl-orientacao-escola_profissional {
-    top: 420px;
-}
-
-.tx-orientacao-escola_profissional {
-    top: 450px;
-    left: 40px;
-}
-
-
-/** ATIVIDADES E CALENDARIO **/
-
-p.titlo_atividades-calendario {
-    font-family: 'TitilliumWeb-Regular', sans-serif;
-    font-size: 32px;
-    font-weight: bold;
-    line-height: 1;
-    display: flex;
-    justify-content: center;
-    top: 600px;
-}
-
-.tl_atividade-calendario {
-    font-family: 'TitilliumWeb-Regular', sans-serif;
-    font-size: 28px;
-    line-height: 1;
-    display: flex;
-    justify-content: center;
-    position: relative;
-}
-
-.tx_atividade-calendario {
-    width: 550px;
-    font-family: 'Dosis-Regular', sans-serif;
+    top: 300px;
 }
