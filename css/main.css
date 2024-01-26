@@ -1,8 +1,7 @@
-::root {
-    --cor-primaria: #ffff;
-    --cor-segundaria: #000;
+:root {
+    --cor_primaria: #F2B077;
+    --cor_segundaria: #000;
 }
-
 
 /* SECTION - Fontes */
 @font-face {
@@ -28,7 +27,7 @@
 
 body,
 html {
-    background: #ffff;
+    background: var(--cor_primaria);
     color: #000000;
     z-index: -1;
 }
@@ -75,20 +74,73 @@ p.titulo-apoio_psi { /*ANCHOR - Titulo do Apoio Psicologico */
     text-align: center;
     text-transform: uppercase;
     font-weight: bold;
+    top: 20px;
 }
 
 p.texto-apoio_psi { /*ANCHOR - Texto do Apoio Psicologico */
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 1rem;
+    font-size: 1.2rem;
     font-weight: normal;
     text-transform: none;
     width: 900px;
     text-align: center !important;
     left: 480px;
+    top: 40px;
 } 
+/* !SECTION */
+
+/* SECTION - CSS Educação Inclusiva */
+p.titulo-educacao_inclusiva { /*ANCHOR - Titulo da Educação Inclusiva */
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.5rem;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    top: 140px;
+}
+
+p.texto-educacao_inclusiva { /*ANCHOR - Texto da Educação Inclusiva */
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.2rem;
+    font-weight: normal;
+    text-transform: none;
+    width: 900px;
+    text-align: center !important;
+    left: 480px;
+    top: 160px;
+}
 /* !SECTION */
 /* !SECTION */
 
 .orientacao-escolar {
-    display: none;
+    top: 1050px;
+}
+
+.titulo-orientacao_escolar {
+    font-family: 'Dosis-Regular', sans-serif;
+    font-size: 2.5rem;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    top: 20px;
+}
+
+.titulo-student_shadowing {
+    font-family: 'Dosis-Regular', sans-serif;
+    font-size: 1.5rem;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    top: 20px;
+}
+
+.texto-student_shadowing {
+    font-family: 'Dosis-Regular', sans-serif;
+    font-size: 1.2rem;
+    font-weight: normal;
+    text-transform: none;
+    width: 900px;
+    text-align: center !important;
+    left: 480px;
+    top: 40px;
 }
