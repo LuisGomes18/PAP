@@ -38,5 +38,9 @@ html {
     text-align: center;
     text-transform: uppercase;
     font-weight: bold;
-    top: 300px;
+    top: 250px;
+}
+
+.subtitulo-pagina {
+    font-family: 'Dosis-Regular';
 }
