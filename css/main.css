@@ -23,6 +23,7 @@
 /* SECTION - Informações gerias da pagima */
 * {
     position: relative;
+    box-sizing: border-box;
 }
 
 body,
